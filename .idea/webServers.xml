@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="054e17d1-bf97-4a1d-868b-75311104c6f5" name="localhost" url="192.168.1.5:8080">
+        <fileTransfer port="0" mountedRoot="F:\gitku" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

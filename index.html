@@ -10,27 +10,30 @@
 <body>
 <div class="content">
     <div class="header">宣传图</div>
-    <!--中间单程往返内容-->
-    <div class="danchengwangfan">
-        <div class="lucheng col-bottom-border"><div class="col-border-right">单程</div></div>
-        <div class="lucheng"><div class="">往返</div></div>
+    <div class="content_content">
+        <!--中间单程往返内容-->
+        <div class="danchengwangfan">
+            <div class="lucheng col-bottom-border"><div class="col-border-right">单程</div></div>
+            <div class="lucheng"><div class="">往返</div></div>
+        </div>
+        <!--机票表单内容-->
+        <form>
+            <label id="chufa"><div class="icon-border"><div class="icon-green"></div><div class="shuzhixian"></div></div><input name="chufa" type="text" placeholder="从哪里出发？"></label>
+            <div class="hr"></div>
+            <label id="mudi"><div class="icon-border"><div class="icon-red"></div></div><input name="mudi" type="text" placeholder="到哪儿去？"></label>
+            <label id="time"><i class="icon-rili"></i><input name="time" type="text" placeholder="出发日期"></label>
+            <div class="secked"><i class="icon-cangwei"></i>舱位<span class="secked-span">请选择<i class="secked-span-icon"></i></span></div>
+            <div class="secked"><i class="icon-renshu"></i>人数<span class="secked-span">请选择<i class="secked-span-icon"></i></span></div>
+        </form>
+        <div class="form-button">提交询价</div>
     </div>
-    <!--机票表单内容-->
-    <form>
-        <label id="chufa"><div class="icon-border"><div class="icon-green"></div><div class="shuzhixian"></div></div><input name="chufa" type="text" placeholder="从哪里出发？"></label>
-        <div class="hr"></div>
-        <label id="mudi"><div class="icon-border"><div class="icon-red"></div></div><input name="mudi" type="text" placeholder="到哪儿去？"></label>
-        <label id="time"><i class="icon-rili"></i><input name="time" type="text" placeholder="出发日期"></label>
-        <div class="secked"><i class="icon-cangwei"></i>舱位<span class="secked-span">请选择<i class="secked-span-icon"></i></span></div>
-        <div class="secked"><i class="icon-renshu"></i>人数<span class="secked-span">请选择<i class="secked-span-icon"></i></span></div>
-    </form>
-    <div class="form-button">提交询价</div>
+    <!--底部导航-->
+    <div class="nav">
+        <div class="nav-right-border"><img src="image/icon_bcar.png" width="35" height="35">订专车</div>
+        <div class="nav-right-border"><img src="image/icon_fligntq.png" width="35" height="35">订机票</div>
+        <div><img src="image/icon_rpeo.png" width="35" height="35">我的</div>
+    </div>
 </div>
-<!--底部导航-->
-<div class="nav">
-    <div class="nav-right-border"><img src="image/icon_bcar.png" width="35" height="35">订专车</div>
-    <div class="nav-right-border"><img src="image/icon_fligntq.png" width="35" height="35">订机票</div>
-    <div><img src="image/icon_rpeo.png" width="35" height="35">我的</div>
-</div>
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

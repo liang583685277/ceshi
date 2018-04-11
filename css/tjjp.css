@@ -14,11 +14,11 @@ html{
     height:100%;
     font-family: PingFangSC-Regular;
     background: #f4f4f4;
-
 }
 .content{
-    overflow-x: hidden;
-    overflow-y: auto;
+    position: relative;
+    width: 100%;
+    height:100%;
 }
 @media (min-width:0px){
     html{font-size:12px;}
@@ -42,22 +42,29 @@ html{
     html{font-size:18px;}
 }
 .header{
+    position: absolute;
     width: 100%;
     height:80px;
-    background:#9b9b9b;
+    top:0;
+    left: 0;
+    background-color:#9b9b9b;
     text-indent: 30px;
     line-height: 80px;
     color: #ffffff;
     letter-spacing:0;
 }
+input{
+    outline:none;
+}
 .nav{
-    position:fixed;
+    position:absolute;
     width: 100%;
     height:65px;
     left: 0;
     bottom:0;
     background: #ffffff;
     border-top: rgba(191,191,191,0.80) solid 1px;
+    z-index: 999;
 }
 .nav>div{
     display: inline-block;
@@ -235,7 +242,6 @@ input{
     right:-20px;
     width:20px;
     height:20px;
-    /*margin: 22px;*/
     z-index: 999;
     background: url("../image/ico-right.png") no-repeat 0px 0px;
     background-size: cover;
@@ -244,11 +250,20 @@ input{
     width:90%;
     height:48px;
     line-height: 48px;
+    margin:20px auto 65px;
     background-color: #2fd5a9;
     text-align: center;
     color: #ffffff;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    margin:20px auto 65px;
+
+}
+.content_content{
+    position: absolute;
+    width:100%;
+    left:0;
+    top:80px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
